@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Secret Script", "Synapse")
+local Window = Library.CreateLib("Fillimental Experiment", "Synapse")
 
 -- Script
 local Script = Window:NewTab("Script")
@@ -50,6 +50,6 @@ end)
 local Troll = Window:NewTab("Troll")
 local TrollSection = Troll:NewSection("Troll")
 
-TrollSection:NewButton("not telling you", "nope", function()
-    game.Players.LocalPlayer:Kick("Hey there dipshit, get fucking banned, join my discord server to appeal dumbass: https://discord.gg/FsQ973Vf93 ")
+TrollSection:NewButton("What does this button do", "click it so i can find out what it does", function()
+    game.Players.LocalPlayer:Kick("Hey there dipshit, this is a fake ban")
 end)
