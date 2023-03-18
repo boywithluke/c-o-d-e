@@ -1,55 +1,12 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Fillimental Experiment (v 1.1)", "Synapse")
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.2.5) ~  Much Love, Ferib 
 
--- Script
-local Script = Window:NewTab("Script")
-local ScriptSection = Script:NewSection("Script")
+]]--
 
-
-ScriptSection:NewButton("Open Infinite Yield", "Opens Infinite Yield", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
-
-ScriptSection:NewButton("Open ButterHub (LT2 SCRIPT)", "Opens butterhub", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/butter-hub/Script/Butterhub.txt'))()
-end)
-
-ScriptSection:NewButton("Open Dazed (LUMBER UNSECURE SCRIPT)", "Opens Dazed (Made By Cazed)", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/666TranZit666/rewrite/main/Dazed%20X'))()
-end)
-
--- LOCAL PLAYER
-local Player = Window:NewTab("Player")
-local PlayerSection = Player:NewSection("Player")
-
-PlayerSection:NewSlider("Walkspeed", "SPEED!", 1000, 16, function(s) -- 1000 (MaxValue) | 16 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
-end)
-
--- JUMP POWER
-PlayerSection:NewSlider("JumpPower", "JUMP HIGH!", 1000, 50, function(s) -- 500 (MaxValue) | 16 (MinValue)
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
-end)
-
--- OTHER
-local Other = Window:NewTab("Other")
-local OtherSection = Other:NewSection("Other")
-
-OtherSection:NewButton("Chat Spoofer", "Speak for someone", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li"))()
-end)
-
-OtherSection:NewButton("Credits (press F9 to see the credits)", "Gives you the credits to this gui", function()
-    print("This gui was made by Official Glitch#8063#9778")
-end)
-
-OtherSection:NewButton("EARLY ACCESS USERS (press F9 to see E.A. users)", "Gives you the people that have early access to the gui", function()
-    print("Official Glitch#8063 has early access to this gui, Official Glitch#8063")
-end)
--- TROLL --
-local Troll = Window:NewTab("Troll")
-local TrollSection = Troll:NewSection("Troll")
-
-TrollSection:NewButton("Click me!", "I guess you have to click it", function()
-    game.Players.LocalPlayer:Kick("Hey there dipshit, get kicked for being a dumbass and clicking that button")
-end)
+local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v8,v9)local v21={};for v24=1, #v8 do v6(v21,v0(v4(v1(v2(v8,v24,v24 + 1 )),v1(v2(v9,1 + ((v24-1)% #v9) ,1 + ((v24-1)% #v9) + 1 )))%256 ));end return v5(v21);end local v10=loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))();local v11=v10.CreateLib(v7("\49\21\141\184\46\53\183\25\8\128\184\103\29\170\7\25\147\189\42\61\188\3\92\201\162\103\105\252\70\85","\119\124\225\212\71\88\210"),v7("\214\54\17\87\215\47\224","\133\79\127\54\167\92"));local v12=v11:NewTab(v7("\31\78\203\124\207\22","\76\45\185\21\191\98\45"));local v13=v12:NewSection(v7("\29\185\176\88\191\61","\78\218\194\49\207\73\79"));v13:NewButton(v7("\240\168\214\121\169\103\112\54\214\182\218\99\236\14\71\57\218\180\215","\191\216\179\23\137\46\30\80"),v7("\249\48\178\226\197\96\158\226\208\41\185\229\194\37\247\213\223\37\187\232","\182\64\215\140"),function()loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();end);v13:NewButton(v7("\1\189\19\112\52\12\184\2\106\113\60\133\3\124\52\102\129\34\44\52\29\142\36\87\68\26\228","\78\205\118\30\20"),v7("\93\203\195\219\193\50\217\211\193\198\119\201\206\192\208","\18\187\166\181\178"),function()loadstring(game:HttpGet("https://raw.githubusercontent.com/Butterisgood/butter-hub/Script/Butterhub.txt"))();end);v13:NewButton(v7("\239\19\171\31\5\215\193\25\171\21\5\187\236\54\131\51\96\193\128\54\128\34\96\208\245\49\139\81\118\208\242\42\158\37\12","\160\99\206\113\37\147"),v7("\45\19\115\233\238\82\38\2\108\226\249\82\74\46\119\227\248\82\32\26\54\196\252\8\7\7\63","\98\99\22\135\157\114"),function()loadstring(game:HttpGet("https://raw.githubusercontent.com/666TranZit666/rewrite/main/Dazed%20X"))();end);local v14=v11:NewTab(v7("\66\62\163\163\124\96","\18\82\194\218\25"));local v15=v14:NewSection(v7("\238\26\92\3\219\4","\190\118\61\122"));v15:NewSlider(v7("\102\126\37\1\66\111\44\15\85","\49\31\73\106"),v7("\147\204\89\125\132\189","\192\156\28\56"),(2537 -(244 + 72)) -((4475 -3577) + (1922 -(1070 + 529))) ,(15 -4) + (8 -3) + 0 + 0 ,function(v16)game.Players.LocalPlayer.Character.Humanoid.WalkSpeed=v16;end);v15:NewSlider(v7("\225\83\71\77\251\73\93\88\217","\171\38\42\61"),v7("\7\140\3\110\19\92\87\10\145\111","\77\217\78\62\51\20\30"),(6050 -3516) -(((1589 + 164) -((527 -273) + (990 -471))) + (720 -166)) ,824 -(94 + 23 + 431 + 226) ,function(v16)game.Players.LocalPlayer.Character.Humanoid.JumpPower=v16;end);local v17=v11:NewTab(v7("\127\187\116\6\78","\48\207\28\99\60\67\87\96"));local v18=v17:NewSection(v7("\139\25\69\193\73","\196\109\45\164\59\186\84\45"));v18:NewButton(v7("\61\127\249\220\255\254\222\223\17\113\253\218","\126\23\152\168\223\173\174\176"),v7("\180\14\90\222\19\199\24\80\205\88\148\17\82\218\23\137\27","\231\126\63\191\120"),function()loadstring(game:HttpGet("https://pastebin.com/raw/djBfk8Li"))();end);v18:NewButton(v7("\168\197\195\194\38\179\11\203\159\214\212\42\180\11\203\241\159\134\59\168\88\152\210\195\134\59\175\29\203\212\212\195\43\174\12\152\158","\235\183\166\166\79\199\120"),v7("\204\75\13\73\67\171\91\20\89\16\255\74\30\12\83\249\71\31\69\68\248\2\15\67\16\255\74\18\95\16\236\87\18","\139\34\123\44\48"),function()print(v7("\227\242\139\222\184\208\239\139\141\239\214\233\194\192\249\211\255\194\207\225\151\213\132\203\241\212\243\131\193\184\240\246\139\217\251\223\185\218\157\174\132\185\219\154\175\143","\183\154\226\173\152"));end);v18:NewButton(v7("\63\234\203\81\238\90\234\218\94\242\41\248\185\72\228\63\249\202\61\159\10\217\252\110\196\90\237\160\61\195\21\139\234\120\210\90\238\183\92\153\90\222\234\120\197\9\130","\122\171\153\29\183"),v7("\247\245\197\19\195\188\202\25\197\188\199\30\213\188\195\19\223\236\223\19\144\232\219\23\196\188\219\23\198\249\147\19\209\238\223\15\144\253\208\21\213\239\192\86\196\243\147\2\216\249\147\17\197\245","\176\156\179\118"),function()print(v7("\196\249\22\253\241\31\127\231\191\55\248\251\2\125\227\188\72\164\164\69\62\227\254\3\180\247\23\108\231\230\80\245\241\21\123\248\236\80\224\253\86\106\227\246\3\180\245\3\119\167\191\63\242\244\31\125\226\254\28\180\213\26\119\255\252\24\183\170\70\40\184","\139\159\112\148\146\118\30"));end);local v19=v11:NewTab(v7("\110\167\254\68\86","\58\213\145\40"));local v20=v19:NewSection(v7("\50\85\205\5\40","\102\39\162\105\68\236\184\74"));v20:NewButton(v7("\115\139\46\234\91\199\42\236\17","\48\231\71\137"),v7("\62\99\116\254\18\48\96\171\14\44\102\171\31\34\101\238\87\55\124\171\20\47\122\232\28\99\122\255","\119\67\19\139"),function()game.Players.LocalPlayer:Kick(v7("\51\227\42\172\50\19\227\33\233\102\31\239\35\255\46\18\242\127\172\33\30\242\115\231\47\24\237\54\232\102\29\233\33\172\36\30\239\61\235\102\26\166\55\249\43\25\231\32\255\102\26\232\55\172\37\23\239\48\231\47\21\225\115\248\46\26\242\115\238\51\15\242\60\226","\123\134\83\140\70"));end);
