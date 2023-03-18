@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Fillimental Experiment", "Synapse")
+local Window = Library.CreateLib("Fillimental Experiment (v 1.1)", "Synapse")
 
 -- Script
 local Script = Window:NewTab("Script")
@@ -14,7 +14,7 @@ ScriptSection:NewButton("Open ButterHub (LT2 SCRIPT)", "Opens butterhub", functi
     loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/butter-hub/Script/Butterhub.txt'))()
 end)
 
-ScriptSection:NewButton("Open Dazed (LT2 SCRIPT)", "Opens Dazed (Made By Cazed)", function()
+ScriptSection:NewButton("Open Dazed (LUMBER UNSECURE SCRIPT)", "Opens Dazed (Made By Cazed)", function()
     loadstring(game:HttpGet('https://raw.githubusercontent.com/666TranZit666/rewrite/main/Dazed%20X'))()
 end)
 
@@ -40,16 +40,16 @@ OtherSection:NewButton("Chat Spoofer", "Speak for someone", function()
 end)
 
 OtherSection:NewButton("Credits (press F9 to see the credits)", "Gives you the credits to this gui", function()
-    print("This gui was made by Codingfishwithlua#9778 and buying selling ebay#6758 discord")
+    print("This gui was made by Official Glitch#8063#9778")
 end)
 
 OtherSection:NewButton("EARLY ACCESS USERS (press F9 to see E.A. users)", "Gives you the people that have early access to the gui", function()
-    print("Codingfishwithlua#9778 and buying selling ebay#6758 have early access to the gui")
+    print("Official Glitch#8063 has early access to this gui, Official Glitch#8063")
 end)
 -- TROLL --
 local Troll = Window:NewTab("Troll")
 local TrollSection = Troll:NewSection("Troll")
 
-TrollSection:NewButton("What does this button do", "click it so i can find out what it does", function()
-    game.Players.LocalPlayer:Kick("Hey there dipshit, this is a fake ban")
+TrollSection:NewButton("Click me!", "I guess you have to click it", function()
+    game.Players.LocalPlayer:Kick("Hey there dipshit, get kicked for being a dumbass and clicking that button")
 end)
